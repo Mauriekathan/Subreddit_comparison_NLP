@@ -2,7 +2,7 @@
 # Cooking vs Baking
 ### An Exploration of the Difference between Subreddits
 
-We were tasked with comparing two subreddits with Natural Langauge Processing (NLP) and create a model to see if we could predict if a piece of text came from one subreddit or another.
+We were tasked with comparing two subreddits with Natural Language Processing (NLP) and create a model to see if we could predict if a piece of text came from one subreddit or another.
 
 ### Table of Contents:
 [Data](./Data/)  
@@ -11,7 +11,7 @@ We were tasked with comparing two subreddits with Natural Langauge Processing (N
 
 ## Problem statement
 
-I choice to review the baking and cooking subreddits. These two subreddits are similar in that they both are about making food but I propose thier subject matter is different enought that we can build a model that compares them.
+I choice to review the baking and cooking subreddits. These two subreddits are similar in that they both are about making food but I propose their subject matter is different enough that we can build a model that compares them.
 
 ## The Data
 
@@ -19,7 +19,7 @@ I used the Pushshift API to gather the data. Pushshift ingests data from various
 
 
 ### Baking
-The baking subreddit has 218K Subscribers. When I was pulling from the pushshift API I was never able to pull more than 10,000 post no matter how many times I queried it, which leads me to believe that the subreddit has approximently that many posts. The submissions are mostly a title and picture and with more indepth discussion in the comments. I used 9,698 submissions, the submission data is both the title of the post and the photo or text of the post. I also gathered 9,496 comments
+The baking subreddit has 218K Subscribers. When I was pulling from the Pushshift API I was never able to pull more than 10,000 post no matter how many times I queried it, which leads me to believe that the subreddit has approximately that many posts. The submissions are mostly a title and picture and with more in-depth discussion in the comments. I used 9,698 submissions, the submission data is both the title of the post and the photo or text of the post. I also gathered 9,496 comments.
 
 ### Cooking
 The baking subreddit has 1.039M Subscribers. I was able to pull more than 100k posts and I suspect that there are even more posts than that. This is a more active subreddit then the baking subreddit. In order to create a better classification model I choose to undersample the cooking subreddit. I pulled 24,472 submission posts and 24,448 comments.
