@@ -129,12 +129,11 @@ I tested different models to see which was best.
 Logistic Regression | C = 1, Ridge |0.9009362966437968|0.8812134717254051
 RandomForestClassifier | n_estimators=100 |0.9745499325631853|0.8746066185812857
 Naive Bayes|defaults|0.8870559724495652|0.8698794668480687
-SVC|C=1,gamma = 1 |0.9467542367911804| 0.8819758009343419
+SVC|C=1, gamma = 1 |0.9467542367911804| 0.8819758009343419
 
-My best model was Naive Bayes. Naive Bayes is a classification model that uses the Bayes’ Theorem to make predictions but assumes independence of varibales. Using this classification model I was able to correctly predict the subreddit of 86.9% of the test data. My test set was comprised of half of my data. 
+My best model was using a Support Vector Classifier with a gamma of 1 and a C of 1. Support Vector Classifiers is a classification model that adds dimensions to help separate the different features of the data. Using this classification model I was able to correctly predict the subreddit of 88.19% of the test data. My test set was comprised of half of my data.
 
 
 ## Next Steps
 
 I used lemmatizer and did not try other other stemmers so I think that is a thing that needs to be improved. I also was limited by the processing power of my computer and would be interested running this on an AWS server and see if I can optimize my model more.
-
